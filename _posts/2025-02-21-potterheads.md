@@ -1,5 +1,6 @@
 ---
 title: Please Read Other Books If You Are a Potterhead
+author: shrutsiv
 tags: [books]
 date: 2025-02-21
 ---

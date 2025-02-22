@@ -1,0 +1,57 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+@font-face{
+  font-family:'Consolas';
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;src:url(../lib/fonts/Consolas/Consolas-Regular.ttf) format('truetype')
+}
+
+@font-face{
+  font-family:'Consolas';
+  font-style:normal;
+  font-weight:700;
+  font-display:swap;src:url(../lib/fonts/Consolas/Consolas-Bold.ttf) format('truetype')
+}
+
+@font-face{
+  font-family:'Consolas';
+  font-style:italic;
+  font-weight:400;
+  font-display:swap;src:url(../lib/fonts/Consolas/Consolas-Italic.ttf) format('truetype')
+}
+
+@font-face{font-family:'Consolas';
+  font-style:italic;
+  font-weight:700;
+  font-display:swap;src:url(../lib/fonts/Consolas/Consolas-Bold-Italic.ttf) format('truetype')
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Consolas', monospace !important;
+}
+
+#sidebar {
+  background-color: light-dark(#edb5f7, #5c396e); /* purple :D */
+}
+
+#avatar {
+  display: none !important
+}
+
+.share-label, .share-icons, .license-wrapper {
+  display: none !important
+}
+
